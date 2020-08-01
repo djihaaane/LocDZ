@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <JFXTextField fx:id="username" layoutX="283.0" layoutY="155.0" />
+      <JFXTextField fx:id="pasword" layoutX="283.0" layoutY="256.0" />
+      <JFXButton layoutX="221.0" layoutY="337.0" onAction="#AjouterUtilisateur" text="Ajouter" />
+      <Label layoutX="167.0" layoutY="173.0" text="Usermane" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="274.0" text="PassWord" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="100.0" text="Entrer les informations de nouveaul utilisateur " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

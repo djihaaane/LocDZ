@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.86" prefHeight="500.0" prefWidth="600.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+    <Label layoutX="22.0" layoutY="57.0" prefHeight="42.0" prefWidth="104.0" text="LocDz" textFill="#000203">
+        <font>
+            <Font name="DejaVu Sans Bold Oblique" size="26.0" />
+        </font>
+    </Label>
+    <JFXButton buttonType="RAISED" layoutX="435.0" layoutY="397.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Login" onKeyPressed="#Login" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color: #F0FFF0;" stylesheets="@style.css" text="Login">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font></JFXButton>
+    <JFXPasswordField fx:id="password" labelFloat="true" layoutX="334.0" layoutY="294.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" promptText="password">
+        <font>
+            <Font name="System Italic" size="13.0" />
+        </font>
+    </JFXPasswordField>
+    <JFXTextField fx:id="user" labelFloat="true" layoutX="334.0" layoutY="219.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" promptText="username">
+        <font>
+            <Font name="System Italic" size="13.0" />
+        </font>
+    </JFXTextField>
+    <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="306.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@icons8-unlock-26.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="308.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@icons8-unlock-26.png" />
+        </image>
+    </ImageView>
+   <Label fx:id="LOGIN" layoutX="231.0" layoutY="329.0" prefHeight="26.0" prefWidth="138.0">
+      <font>
+         <Font name="System Bold Italic" size="14.0" />
+      </font>
+   </Label>
+   <JFXButton layoutX="64.0" layoutY="397.0" onAction="#consulter" text="Consulter">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font>
+   </JFXButton>
+   <Label layoutX="22.0" layoutY="265.0" prefHeight="35.0" prefWidth="223.0" text="Pour Consulter Les Vehicules ">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font>
+   </Label>
+   <Label layoutX="53.0" layoutY="307.0" text="Cliquer sur Consulter">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font>
+   </Label>
+</AnchorPane>
